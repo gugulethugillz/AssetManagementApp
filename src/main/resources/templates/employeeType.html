@@ -262,10 +262,10 @@
           <!-- user login dropdown start-->
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                    <img alt="" th:src="@{'/img/photos/' + ${#authentication.getPrincipal().getUsername()} +'.jpg'}" height="38" width="38">
-                            </span>
-                            <span class="username" th:text="${#authentication.getPrincipal().getUsername()}">User</span>
+<!--                            <span class="profile-ava">-->
+<!--                    <img alt="" th:src="@{'/img/photos/' + ${#authentication.getPrincipal().getUsername()} +'.jpg'}" height="38" width="38">-->
+<!--                            </span>-->
+<!--                            <span class="username" th:text="${#authentication.getPrincipal().getUsername()}">Guest</span>-->
                             <b class="caret"></b>
                         </a>
             <ul class="dropdown-menu extended logout">
@@ -449,7 +449,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="editModalLabel">Employee Type Details</h5>
+        <h5 class="modal-title" id="editModalLabel1">Employee Type Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -517,7 +517,7 @@
   <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
   <!--custome script for all page-->
   <script src="js/scripts.js"></script>
-  <script type="text/javascript" src="static/js/employeeType.js" th:src="@{/js/employeeType.js}"></script>
+<!--  <script type="text/javascript" src="static/js/employeeType.js" th:src="@{/js/employeeType.js}"></script>-->
 
 
 </body>

@@ -23,7 +23,12 @@ public class AssetServiceImpl implements AssetService {
 
 	public List<Asset> findAll(){
 		return assetRepository.findAll();
-	}	
+	}
+
+	@Override
+	public int count() {
+		return assetRepository.findAll().size();
+	}
 
 	public Optional<Asset> findById(int id) {
 		return assetRepository.findById(id);

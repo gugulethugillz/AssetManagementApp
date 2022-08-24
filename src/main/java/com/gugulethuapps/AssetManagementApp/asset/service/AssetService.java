@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface AssetService {
      List<Asset> findAll();
 
+     int count();
+
     Optional<Asset> findById(int id);
 
    void delete(int id);

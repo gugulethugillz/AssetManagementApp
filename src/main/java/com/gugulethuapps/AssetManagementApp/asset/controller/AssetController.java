@@ -24,7 +24,11 @@ public class AssetController {
 		model.addAttribute("vehicles", assetService.findAll());
 		model.addAttribute("employees", employeeService.findAll());
 		return "asset";
-	}	
+	}
+	@GetMapping("assets/count")
+	public int findAll(){
+		return assetService.count();
+	}
 	
 	@RequestMapping("assets/findById")
 	@ResponseBody
